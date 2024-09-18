@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de Criação de Bezerros - Semana 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .content {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .question {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e8f4f8;
+            border-left: 4px solid #3498db;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Semana 1: Introdução à Criação de Bezerros</h1>
+        
+        <h2>1. Princípios da boa criação de bezerros</h2>
+        <p>A criação de bezerros é fundamental para o sucesso de uma fazenda leiteira. Os princípios básicos incluem:</p>
+        <ul>
+            <li>Fornecimento adequado de colostro</li>
+            <li>Nutrição balanceada</li>
+            <li>Ambiente limpo e confortável</li>
+            <li>Monitoramento de saúde</li>
+        </ul>
+
+        <div class="question">
+            Pergunta: Por que o fornecimento adequado de colostro é crucial para bezerros recém-nascidos?
+            <button onclick="toggleAnswer(this)">Ver resposta</button>
+            <div class="answer">
+                O colostro é vital porque contém anticorpos que proporcionam imunidade passiva aos bezerros. Eles nascem sem proteção imunológica e dependem do colostro para obter anticorpos que os protegerão contra doenças nas primeiras semanas de vida.
+            </div>
+        </div>
+
+        <h2>2. O trato digestivo do bezerro</h2>
+        <p>O sistema digestivo do bezerro passa por mudanças significativas nas primeiras semanas de vida:</p>
+        <ul>
+            <li>Inicialmente, o abomaso é o compartimento mais desenvolvido</li>
+            <li>O rúmen se desenvolve gradualmente com a introdução de alimentos sólidos</li>
+            <li>A transição de monogástrico para ruminante ocorre ao longo das primeiras semanas</li>
+        </ul>
+
+        <div class="question">
+            Pergunta: Como o desenvolvimento do rúmen afeta a alimentação do bezerro?
+            <button onclick="toggleAnswer(this)">Ver resposta</button>
+            <div class="answer">
+                À medida que o rúmen se desenvolve, o bezerro ganha a capacidade de digerir alimentos fibrosos e grãos. Isso permite a transição gradual do leite para uma dieta baseada em forragens e concentrados, típica de bovinos adultos. O desenvolvimento adequado do rúmen é crucial para o desmame bem-sucedido e o crescimento saudável do bezerro.
+            </div>
+        </div>
+
+        <h2>3. A importância do colostro</h2>
+        <p>O colostro é o primeiro leite produzido pela vaca após o parto e é essencial para a saúde do bezerro:</p>
+        <ul>
+            <li>Rico em anticorpos (imunoglobulinas)</li>
+            <li>Contém nutrientes concentrados</li>
+            <li>Deve ser fornecido nas primeiras horas após o nascimento</li>
+        </ul>
+
+        <div class="question">
+            Pergunta: Quanto tempo após o nascimento o bezerro deve receber o colostro e por quê?
+            <button onclick="toggleAnswer(this)">Ver resposta</button>
+            <div class="answer">
+                O bezerro deve receber colostro idealmente dentro das primeiras 2 horas após o nascimento, e não mais tarde que 6 horas. Isso porque a capacidade do intestino do bezerro de absorver as imunoglobulinas do colostro diminui rapidamente após o nascimento. A absorção é mais eficiente nas primeiras horas de vida, garantindo que o bezerro obtenha a máxima proteção imunológica.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(button) {
+            const answer = button.nextElementSibling;
+            if (answer.style.display === 'block') {
+                answer.style.display = 'none';
+                button.textContent = 'Ver resposta';
+            } else {
+                answer.style.display = 'block';
+                button.textContent = 'Ocultar resposta';
+            }
+        }
+    </script>
+</body>
+</html>
